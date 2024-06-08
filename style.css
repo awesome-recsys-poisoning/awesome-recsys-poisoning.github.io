@@ -252,6 +252,7 @@ a.continue hover {
 }
 
 .table-list th {
+	text-align: center !important;
 	padding: 6px 13px;
 	border: 1px solid #d0d7de;
 }
