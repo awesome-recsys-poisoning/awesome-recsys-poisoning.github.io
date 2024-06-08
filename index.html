@@ -7,31 +7,31 @@
     <title>Awesome Recsys Poisoning</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=3)">
-    
+
     <link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable/sortable.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable/sortable.min.js"></script>
 
     <link href="style.css" rel="stylesheet" type="text/css">
 
     <script>
-        function countRows(){
+        function countRows() {
             var noRows = document.getElementById("publicationList").rows.length;
-            document.getElementById("totalRows").innerHTML = "Total number of rows: " + (noRows-1);
+            document.getElementById("totalRows").innerHTML = "Total number of rows: " + (noRows - 1);
         }
-        
+
         window.addEventListener('load', function () {
-          const el = document.getElementById('year')
-          // without id:
-          // const el = document.querySelector('.sortable th:first-child')
-          // const el = document.querySelector('.sortable th:nth-child(2)')
-          // const el = document.querySelectorAll('.sortable')[3].querySelector('th:nth-child(7)')
-          // etc.
-          if (el) {
-            el.click()
-          }
+            const el = document.getElementById('year')
+            // without id:
+            // const el = document.querySelector('.sortable th:first-child')
+            // const el = document.querySelector('.sortable th:nth-child(2)')
+            // const el = document.querySelectorAll('.sortable')[3].querySelector('th:nth-child(7)')
+            // etc.
+            if (el) {
+                el.click()
+            }
         })
     </script>
-    
+
     <style>
         <!--
         li.MsoNormal {
@@ -48,12 +48,13 @@
 
 </head>
 
-<body BGCOLOR=#FFFFFF background="images/bg.gif" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 onload="countRows()">
+<body BGCOLOR=#FFFFFF background="images/bg.gif" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0
+    onload="countRows()">
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSQTKFXZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSQTKFXZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
         <tr>
@@ -64,7 +65,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <td align="center" valign="top" width="750">
                             <table width="750" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
                                 <tr>
-                                    <td class="mytitle">A Survey of Poisoning Attacks and Countermeasures in Recommender Systems</td>
+                                    <td class="mytitle">A Survey of Poisoning Attacks and Countermeasures in Recommender
+                                        Systems</td>
                                 </tr>
                                 <tr>
                                     <td class="subject" style="padding-top:0px; color: #000;">
@@ -82,17 +84,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </tr>
                                 <tr>
                                     <td class="body">
-Recommender systems have become an integral part of online services to help users locate specific information in a sea of data. However, existing studies show that some recommender systems are vulnerable to poisoning attacks, particularly those that involve learning schemes. A poisoning attack is where an adversary injects carefully crafted data into the process of training a model, with the goal of manipulating the system's final recommendations. Based on recent advancements in artificial intelligence, such attacks have gained importance recently. At present, we do not have a full and clear picture of why adversaries mount such attacks, nor do we have comprehensive knowledge of the full capacity to which such attacks can undermine a model or the impacts that might have. While numerous countermeasures to poisoning attacks have been developed, they have not yet been systematically linked to the properties of the attacks. Consequently, assessing the respective risks and potential success of mitigation strategies is difficult, if not impossible. This survey aims to fill this gap by primarily focusing on poisoning attacks and their countermeasures. This is in contrast to prior surveys that mainly focus on attacks and their detection methods. Through an exhaustive literature review, we provide a novel taxonomy for poisoning attacks, formalise its dimensions, and accordingly organise 30+ attacks described in the literature. Further, we review 40+ countermeasures to detect and/or prevent poisoning attacks, evaluating their effectiveness against specific types of attacks. This comprehensive survey should serve as a point of reference for protecting recommender systems against poisoning attacks. The article concludes with a discussion on open issues in the field and impactful directions for future research.
+                                        Recommender systems have become an integral part of online services to help
+                                        users locate specific information in a sea of data. However, existing studies
+                                        show that some recommender systems are vulnerable to poisoning attacks,
+                                        particularly those that involve learning schemes. A poisoning attack is where an
+                                        adversary injects carefully crafted data into the process of training a model,
+                                        with the goal of manipulating the system's final recommendations. Based on
+                                        recent advancements in artificial intelligence, such attacks have gained
+                                        importance recently. At present, we do not have a full and clear picture of why
+                                        adversaries mount such attacks, nor do we have comprehensive knowledge of the
+                                        full capacity to which such attacks can undermine a model or the impacts that
+                                        might have. While numerous countermeasures to poisoning attacks have been
+                                        developed, they have not yet been systematically linked to the properties of the
+                                        attacks. Consequently, assessing the respective risks and potential success of
+                                        mitigation strategies is difficult, if not impossible. This survey aims to fill
+                                        this gap by primarily focusing on poisoning attacks and their countermeasures.
+                                        This is in contrast to prior surveys that mainly focus on attacks and their
+                                        detection methods. Through an exhaustive literature review, we provide a novel
+                                        taxonomy for poisoning attacks, formalise its dimensions, and accordingly
+                                        organise 30+ attacks described in the literature. Further, we review 40+
+                                        countermeasures to detect and/or prevent poisoning attacks, evaluating their
+                                        effectiveness against specific types of attacks. This comprehensive survey
+                                        should serve as a point of reference for protecting recommender systems against
+                                        poisoning attacks. The article concludes with a discussion on open issues in the
+                                        field and impactful directions for future research.
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <img class="center" src="images/attack_process.png" alt="" border=0  ></img>
+                                        <img class="center" src="images/attack_process.png" alt="" border=0></img>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <img class="center" src="images/taxonomy.png" alt="" border=0  ></img>
+                                        <img class="center" src="images/taxonomy.png" alt="" border=0></img>
                                     </td>
                                 </tr>
                                 <tr>
@@ -101,7 +126,85 @@ Recommender systems have become an integral part of online services to help user
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="body" id="totalRows">Total number of rows: XX (to be filled)</td>
+                                    <td>
+                                        <table style="border-collapse: collapse; width: 100%;" class="table-list-II">
+                                            <tr>
+                                                <th style="border: 1px solid black; width: 50%;">Paper Title</th>
+                                                <th style="border: 1px solid black;">Venue</th>
+                                                <th style="border: 1px solid black;">Year</th>
+                                                <th style="border: 1px solid black;">Note</th>
+                                            </tr>
+
+                                            <tr>
+                                                <td><a href="https://arxiv.org/abs/2401.01527">Poisoning Attacks against
+                                                        Recommender Systems: A Survey</a></td>
+                                                <td>arXiv</td>
+                                                <td>2024</td>
+                                                <td>Focus on benchmarking</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="https://www.sciencedirect.com/science/article/pii/S0950705122011650">Manipulating
+                                                        vulnerability: Poisoning attacks and countermeasures in
+                                                        federated cloud–edge–client learning for image
+                                                        classification</a></td>
+                                                <td>KBS</td>
+                                                <td>2023</td>
+                                                <td>Focus on federated learning</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="https://ieeexplore.ieee.org/abstract/document/9900151">A
+                                                        Survey on Data Poisoning Attacks and Defenses</a></td>
+                                                <td>DSC</td>
+                                                <td>2022</td>
+                                                <td>Not focus on recommender systems</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="https://link.springer.com/article/10.1007/s10462-020-09898-3">A
+                                                        survey of attack detection approaches in collaborative filtering
+                                                        recommender systems</a></td>
+                                                <td>DSC</td>
+                                                <td>2021</td>
+                                                <td>Classic heuristic attacks only</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="https://ieeexplore.ieee.org/abstract/document/9205244">Understanding
+                                                        Shilling Attacks and Their Detection Traits: A Comprehensive
+                                                        Survey</a></td>
+                                                <td>DSC</td>
+                                                <td>2020</td>
+                                                <td>Classic heuristic attacks only</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="https://link.springer.com/article/10.1007/s10462-018-9655-x">Shilling
+                                                        attacks against collaborative recommender systems: a review</a>
+                                                </td>
+                                                <td>DSC</td>
+                                                <td>2020</td>
+                                                <td>Classic heuristic attacks only</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="https://link.springer.com/article/10.1007/s11518-018-5374-8">A
+                                                        Comparative Study on Shilling Detection Methods for Trustworthy
+                                                        Recommendations</a></td>
+                                                <td>SESC</td>
+                                                <td>2018</td>
+                                                <td>Classic heuristic attacks only</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="https://ieeexplore.ieee.org/abstract/document/7170330">A
+                                                        comparative study of shilling attack detectors for recommender
+                                                        systems</a></td>
+                                                <td>ICSSSM</td>
+                                                <td>2015</td>
+                                                <td>Classic heuristic attacks only</td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="subTitle">
@@ -109,11 +212,567 @@ Recommender systems have become an integral part of online services to help user
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="body" id="totalRows">Total number of rows: XX (to be filled)</td>
+                                    <td>
+                                        <table class=" table-list ">
+                                            <thead>
+                                                <tr>
+                                                    <th><strong>Paper</strong></th>
+                                                    <th><strong>Venue</strong></th>
+                                                    <th><strong>Year</strong></th>
+                                                    <th><strong>Type</strong></th>
+                                                    <th><strong>Data</strong></th>
+                                                    <th><strong>Code</strong></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="https://doi.org/10.1145/3567420"
+                                                            rel="nofollow">Poisoning GNN-based recommender systems with
+                                                            generative surrogate-based attacks</a></td>
+                                                    <td>ACM TOIS</td>
+                                                    <td>2023</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">FR</a>, <a href="#datasets">ML</a>, <a
+                                                            href="#datasets">AMCP</a>, <a href="#datasets">LF</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9806457"
+                                                            rel="nofollow">Shilling Black-Box Recommender Systems by
+                                                            Learning to Generate Fake User Profiles</a></td>
+                                                    <td>IEEE Trans. Neural Netw. Learn. Syst</td>
+                                                    <td>2022</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">FT</a>, <a
+                                                            href="#datasets">YE</a>, <a href="#datasets">AAT</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/abs/10.1145/3534678.3539359"
+                                                            rel="nofollow">Knowledge enhanced Black-box Attacks for
+                                                            Recommendations</a></td>
+                                                    <td>KDD</td>
+                                                    <td>2022</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">BC</a>, <a
+                                                            href="#datasets">LA</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://ieeexplore.ieee.org/document/9806383"
+                                                            rel="nofollow">LOKI: A Practical Data Poisoning Attack
+                                                            Frameworkagainst Next Item Recommendations</a></td>
+                                                    <td>TKDE</td>
+                                                    <td>2022</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">ABT</a>, <a href="#datasets">St</a>,<a
+                                                            href="#datasets">GOW</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3488560.3498386"
+                                                            rel="nofollow">Pipattack: Poisoning federated recommender
+                                                            systems for manipulating item promotion</a></td>
+                                                    <td>WSDM</td>
+                                                    <td>2022</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">AMCP</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://www.ijcai.org/proceedings/2022/0306.pdf"
+                                                            rel="nofollow">Poisoning Deep Learning based Recommender
+                                                            Model in Federated Learning Scenarios</a></td>
+                                                    <td>IJCAI</td>
+                                                    <td>2022</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">ADM</a></td>
+                                                    <td><a href="https://github.com/rdz98/PoisonFedDLRS">Python</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/pdf/2202.04975.pdf"
+                                                            rel="nofollow">FedAttack: Effective and Covert Poisoning
+                                                            Attack on Federated Recommendation via Hard Sampling</a>
+                                                    </td>
+                                                    <td>Arxiv</td>
+                                                    <td>2022</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">ABT</a></td>
+                                                    <td><a href="https://github.com/wuch15/FedAttack">Python</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2202.06701"
+                                                            rel="nofollow">UA-FedRec: Untargeted Attack on Federated
+                                                            News Recommendation</a></td>
+                                                    <td>Arxiv</td>
+                                                    <td>2022</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">MIND</a>, <a href="#datasets">Feeds</a></td>
+                                                    <td><a href="https://github.com/yjw1029/UA-FedRec">Python</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3447548.3467335"
+                                                            rel="nofollow">Triple Adversarial Learning for Influence
+                                                            based Poisoning Attack in Recommender Systems</a></td>
+                                                    <td>KDD</td>
+                                                    <td>2021</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">FT</a></td>
+                                                    <td><a href="https://github.com/Daftstone/TrialAttack">Python</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3460120.3484805"
+                                                            rel="nofollow">Reverse Attack: Black-box Attacks on
+                                                            Collaborative Recommendation</a></td>
+                                                    <td>CSS</td>
+                                                    <td>2021</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">NF</a>, <a
+                                                            href="#datasets">AMB &amp; ADM</a>, <a
+                                                            href="#datasets">TW</a>, <a href="#datasets">G+</a>, <a
+                                                            href="#datasets">CIT</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://ieeexplore.ieee.org/document/9458627"
+                                                            rel="nofollow">Attacking Black-box Recommendations via
+                                                            Copying Cross-domain User Profiles</a></td>
+                                                    <td>ICDE</td>
+                                                    <td>2021</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">NF</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://www.sciencedirect.com/science/article/pii/S0950705121006523"
+                                                            rel="nofollow">Simulating real profiles for shilling
+                                                            attacks: A generative approach</a></td>
+                                                    <td>KBS</td>
+                                                    <td>2021</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">ML</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://www.sciencedirect.com/science/article/pii/S0020025521007313"
+                                                            rel="nofollow">Ready for emerging threats to recommender
+                                                            systems? A graph convolution-based generative shilling
+                                                            attack</a></td>
+                                                    <td>IS</td>
+                                                    <td>2021</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">DB</a>, <a href="#datasets">CI</a></td>
+                                                    <td><a
+                                                            href="https://github.com/silentair/GOAT/tree/7c1747d40f9bc2b5b0ac5035770b3e9f2bbd5211">Python</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ett.3872"
+                                                            rel="nofollow">Data poisoning attacks on neighborhoodbased
+                                                            recommender systems</a></td>
+                                                    <td>ETT</td>
+                                                    <td>2021</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">FT</a>, <a href="#datasets">ML</a>, <a
+                                                            href="#datasets">AMV</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3447548.3467233"
+                                                            rel="nofollow">Data Poisoning Attack against Recommender
+                                                            System Using Incomplete and Perturbed Data</a></td>
+                                                    <td>KDD</td>
+                                                    <td>2021</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">AIV</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3460231.3474275"
+                                                            rel="nofollow">Black-Box Attacks on Sequential Recommenders
+                                                            via Data-Free Model Extraction</a></td>
+                                                    <td>RecSys</td>
+                                                    <td>2021</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">ML</a>,<a href="#datasets">St</a>, <a
+                                                            href="#datasets">ABT</a></td>
+                                                    <td><a
+                                                            href="https://github.com/Yueeeeeeee/RecSys-Extraction-Attack">Python</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/abs/10.1007/s00521-021-06573-8"
+                                                            rel="nofollow">Poisoning attacks against knowledge
+                                                            graph-based recommendation systems using deep reinforcement
+                                                            learning</a></td>
+                                                    <td>Neural. Comput. Appl.</td>
+                                                    <td>2021</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#">FTr</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3442381.3449891"
+                                                            rel="nofollow">Adversarial Item Promotion: Vulnerabilities
+                                                            at the Core of Top-N Recommenders that Use Images to Address
+                                                            Cold Start</a></td>
+                                                    <td>WWW</td>
+                                                    <td>2021</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">AMMN</a>, <a href="#datasets">TC</a></td>
+                                                    <td><a href="https://github.com/liuzrcc/AIP">Python</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/pdf/2012.10544.pdf"
+                                                            rel="nofollow">Data poisoning attacks to deep learning based
+                                                            recommender systems</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2021</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">LA</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3366423.3379992"
+                                                            rel="nofollow">Practical data poisoning attack against
+                                                            next-item recommendation</a></td>
+                                                    <td>WWW</td>
+                                                    <td>2020</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">ABT</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3366423.3380072"
+                                                            rel="nofollow">Influence function based data poisoning
+                                                            attacks to top-n recommender systems</a></td>
+                                                    <td>WWW</td>
+                                                    <td>2020</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">YE</a>, <a href="#datasets">ADM</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3340531.3411884"
+                                                            rel="nofollow">Attacking recommender systems with augmented
+                                                            user profiles</a></td>
+                                                    <td>CIKM</td>
+                                                    <td>2020</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">FT</a>, <a
+                                                            href="#datasets">AAT</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://ieeexplore.ieee.org/document/9101655/"
+                                                            rel="nofollow">Poisonrec: an adaptive data poisoning
+                                                            framework for attacking black-box recommender systems</a>
+                                                    </td>
+                                                    <td>ICDE</td>
+                                                    <td>2020</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">St</a>, <a href="#datasets">AMCP</a>, <a
+                                                            href="#datasets">ML</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3383313.3412243"
+                                                            rel="nofollow">Revisiting adversarially learned injection
+                                                            attacks against recommender systems</a></td>
+                                                    <td>RecSys</td>
+                                                    <td>2020</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">GOW</a></td>
+                                                    <td><a
+                                                            href="https://github.com/graytowne/revisit_adv_rec">Python</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3298689.3347031"
+                                                            rel="nofollow">Adversarial attacks on an oblivious
+                                                            recommender</a></td>
+                                                    <td>RecSys</td>
+                                                    <td>2019</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">ML</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://ieeexplore.ieee.org/document/9013539"
+                                                            rel="nofollow">Targeted poisoning attacks on social
+                                                            recommender systems</a></td>
+                                                    <td>GLOBECOM</td>
+                                                    <td>2019</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">FT</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3357384.3358116"
+                                                            rel="nofollow">Data poisoning attacks on cross-domain
+                                                            recommendation</a></td>
+                                                    <td>CIKM</td>
+                                                    <td>2019</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">NF</a>, <a href="#datasets">ML</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3274694.3274706"
+                                                            rel="nofollow">Poisoning attacks to graph-based recommender
+                                                            systems</a></td>
+                                                    <td>ACSAC</td>
+                                                    <td>2018</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">ML</a>, <a href="#datasets">AIV</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://people.duke.edu/~zg70/papers/ndss17-attackRS.pdf"
+                                                            rel="nofollow">Fake Co-visitation Injection Attacks to
+                                                            Recommender Systems</a></td>
+                                                    <td>NDSS</td>
+                                                    <td>2017</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">YT</a>, <a href="#datasets">eB</a>, <a
+                                                            href="#datasets">AMV</a>, <a href="#datasets">YE</a>, <a
+                                                            href="#datasets">LI</a></td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://proceedings.neurips.cc/paper/2016/hash/83fa5a432ae55c253d0e60dbfa716723-Abstract.html"
+                                                            rel="nofollow">Data poisoning attacks on factorization-based
+                                                            collaborative filtering</a></td>
+                                                    <td>NIPS</td>
+                                                    <td>2016</td>
+                                                    <td>Model-intrinsic</td>
+                                                    <td><a href="#datasets">ML</a></td>
+                                                    <td><a
+                                                            href="https://github.com/fuying-wang/Data-poisoning-attacks-on-factorization-based-collaborative-filtering">Python</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/988672.988726"
+                                                            rel="nofollow">Shilling recommender systems for fun and
+                                                            profit</a></td>
+                                                    <td>WWW</td>
+                                                    <td>2004</td>
+                                                    <td>Model-agnostic</td>
+                                                    <td><a href="#datasets">ML</a></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="subTitle">
                                         IV. Datasets
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table id="datasets" class=" table-list ">
+                                            <thead>
+                                                <tr>
+                                                    <th align="left">Dataset</th>
+                                                    <th>Name</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td align="left"><a href="http://jmcauley.ucsd.edu/data/amazon/"
+                                                            rel="nofollow">AAT</a></td>
+                                                    <td>Amazon Automotive</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="http://jmcauley.ucsd.edu/data/amazon/"
+                                                            rel="nofollow">ABT</a></td>
+                                                    <td>Amazon Beauty</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="http://jmcauley.ucsd.edu/data/amazon/"
+                                                            rel="nofollow">ADM</a></td>
+                                                    <td>Amazon Digital Music</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="http://jmcauley.ucsd.edu/data/amazon/"
+                                                            rel="nofollow">AIV</a></td>
+                                                    <td>Amazon Instant Video</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="http://jmcauley.ucsd.edu/data/amazon/"
+                                                            rel="nofollow">AMB</a></td>
+                                                    <td>Amazon Book</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="http://jmcauley.ucsd.edu/data/amazon/"
+                                                            rel="nofollow">AMMN</a></td>
+                                                    <td>Amazon Men</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="http://jmcauley.ucsd.edu/data/amazon/"
+                                                            rel="nofollow">AMV</a></td>
+                                                    <td>Amazon Movie</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="http://jmcauley.ucsd.edu/data/amazon/"
+                                                            rel="nofollow">AMCP</a></td>
+                                                    <td>Amazon Cell-phone</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="http://jmcauley.ucsd.edu/data/amazon/"
+                                                            rel="nofollow">AMP</a></td>
+                                                    <td>Amazon Product</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://www.kaggle.com/datasets/somnambwl/bookcrossing-dataset"
+                                                            rel="nofollow">BC</a></td>
+                                                    <td>Book-Crossing</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="https://paperswithcode.com/dataset/ciao"
+                                                            rel="nofollow">CI</a></td>
+                                                    <td>Ciao</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="https://www.aminer.org/citation/"
+                                                            rel="nofollow">CIT</a></td>
+                                                    <td>Citation Network</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://www.kaggle.com/datasets/fengzhujoey/douban-datasetratingreviewside-information"
+                                                            rel="nofollow">DB</a></td>
+                                                    <td>Douban</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://www.kaggle.com/datasets/promptcloud/ebay-product-listing-dataset"
+                                                            rel="nofollow">eB</a></td>
+                                                    <td>eBay</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="https://grouplens.org/datasets/eachmovie/"
+                                                            rel="nofollow">EM</a></td>
+                                                    <td>Eachmovie</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="http://www.cse.msu.edu/~tangjili/trust.html"
+                                                            rel="nofollow">EP</a></td>
+                                                    <td>Epinions</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://github.com/yjw1029/UA-FedRec">Feeds</a></td>
+                                                    <td>Microsoft news App</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="https://www.baltrunas.info/context-aware"
+                                                            rel="nofollow">FR</a></td>
+                                                    <td>FRappe - Mobile App Recommendations</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://guoguibing.github.io/librec/datasets.html"
+                                                            rel="nofollow">FT</a></td>
+                                                    <td>Film Trust</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://link.springer.com/article/10.1007/s00521-021-06573-8"
+                                                            rel="nofollow">Ftr</a></td>
+                                                    <td>Fund Transactions</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://snap.stanford.edu/data/ego-Gplus.html"
+                                                            rel="nofollow">G+</a></td>
+                                                    <td>Google+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="http://snap.stanford.edu/data/loc-Gowalla.html"
+                                                            rel="nofollow">GOW</a></td>
+                                                    <td>Gowalla</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="https://msnews.github.io/"
+                                                            rel="nofollow">MIND</a></td>
+                                                    <td>Microsoft News</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="http://millionsongdataset.com/lastfm/"
+                                                            rel="nofollow">LA</a></td>
+                                                    <td>Last.fm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://www.kaggle.com/datasets/killbot/linkedin"
+                                                            rel="nofollow">LI</a></td>
+                                                    <td>Linkedin</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="https://www.librarything.com/tag/dataset"
+                                                            rel="nofollow">LT</a></td>
+                                                    <td>LibraryThing</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://grouplens.org/datasets/movielens/100k/"
+                                                            rel="nofollow">ML</a></td>
+                                                    <td>MovieLens</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data"
+                                                            rel="nofollow">NF</a></td>
+                                                    <td>Netflix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://www.kaggle.com/datasets/tamber/steam-video-games"
+                                                            rel="nofollow">St</a></td>
+                                                    <td>Steam</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="https://www.tradesy.com/"
+                                                            rel="nofollow">TC</a></td>
+                                                    <td>Tradesy</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://www.kaggle.com/datasets/andrewmvd/trip-advisor-hotel-reviews"
+                                                            rel="nofollow">Trip</a></td>
+                                                    <td>TripAdvisor</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="https://anlab-kaist.github.io/traces/"
+                                                            rel="nofollow">TW</a></td>
+                                                    <td>Twitter <a
+                                                            href="https://github.com/ANLAB-KAIST/traces">[Code]</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://www.kaggle.com/c/yelp-recruiting/data"
+                                                            rel="nofollow">YE</a></td>
+                                                    <td>Yelp</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a
+                                                            href="https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset"
+                                                            rel="nofollow">YT</a></td>
+                                                    <td>YouTube</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><a href="#">SYNC</a></td>
+                                                    <td>Synthetic datasets</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </td>
                                 </tr>
                                 <tr>
@@ -152,7 +811,8 @@ Recommender systems have become an integral part of online services to help user
                                 <b>
                                     <font color="#666666">© 2024
                                         Awesome Recsys Poisoning</font>
-                                </b></font>&nbsp;
+                                </b>
+                            </font>&nbsp;
                         </td>
                     </tr>
                     <tr bgcolor="#CCCCCC">
@@ -165,7 +825,9 @@ Recommender systems have become an integral part of online services to help user
     </table>
 
 
-    <a href="https://info.flagcounter.com/19GI"><img src="https://s11.flagcounter.com/count2/19GI/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+    <a href="https://info.flagcounter.com/19GI"><img
+            src="https://s11.flagcounter.com/count2/19GI/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+            alt="Flag Counter" border="0"></a>
 </body>
 
 </html>
